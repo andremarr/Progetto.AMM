@@ -1,1 +1,48 @@
 <!DOCTYPE html>
+<html>
+    <head>
+        <title>Nerdbook : Profilo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <meta name="author"
+              content="Andrea Marras">
+        <meta name="keywords"
+              content="nerd book network libro social">
+    </head>
+    <body>
+        <div id="header">
+            <div id="title">
+                <h1>Profilo</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="descrizione.html">Descrizione</a></li>
+                    <li><a href="login.html">Profilo</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="divBody">
+            <h2>Dati personali</h2>
+            <div id="datiPersonali">
+                <form action="servlet.java" method="get">
+                    <label for="name">Nome </label>
+                    <input type="text" name="name" id="name" value="--"/><br/>
+                    <label for="surname">Cognome </label>
+                    <input type="text" name="surname" id="surname" value="--"/><br/>
+                    <label for="imgProfilo">URL immagine del profilo </label>
+                    <input type="url" name="URL" id="imgProfilo" value="http://----/"/><br/>
+                    <label for="descrizione">Descriviti in breve</label>
+                    <textarea rows="5" cols="30" name="descrizione" id="descrizione">Parlaci un po' di te</textarea><br/>
+                    <label for="dataDiNascita">Data di nascita</label>
+                    <input type="date" name="dataDiNascita" id="dataDiNascita"/><br/>
+                    <label for="pswd">Inserire Password</label>
+                    <input type="password" name="pswd" id="pswd" value="oscurato"/><br/>
+                    <label for="conferma">Conferma Password</label>
+                    <input type="password" name="confermaPswd" id="conferma" value="oscurato"/><br/>
+                    <button type="submit">Conferma</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
