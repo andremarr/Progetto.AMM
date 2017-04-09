@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nerdbook : Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <meta name="author"
+              content="Andrea Marras">
+        <meta name="keywords"
+              content="nerd book network libro social">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    </head>
+    <body>
+        <header>
+            <div id="title">
+                <img class="brand" title="brandNerdBook" alt="Icona di NerdBook" src="img/brandNerdBook.png">
+                <h1>NerdBook</h1>
+            </div>
+            <nav>
+            <ul>
+                <li><a href="descrizione.html">Descrizione</a></li>
+                <li><a href="profilo.html">Profilo</a></li>
+                <li><a href="bacheca.html">Bacheca</a></li>
+            </ul>
+            </nav>
+        </header>
+        
+        <div id="divBody">
+            <form action="servlet.java" method="get">
+                <div id="datiAccesso">
+                    <label for="userName">Inserire Username</label>
+                    <input type="text" name="username" id="userName" value="Username"/><br/>
+                    <label for="pswd">Inserire Password</label>
+                    <input type="password" name="pswd" id="pswd" value="oscurato"/><br/>
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+    </body>
+</html>

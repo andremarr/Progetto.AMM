@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nerdbook : Profilo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <meta name="author"
+              content="Andrea Marras">
+        <meta name="keywords"
+              content="nerd book network libro social">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    </head>
+    <body>
+        <header>
+            <div id="title">
+                <h1>Profilo</h1>
+            </div>
+            <nav>
+            <ul>
+                <li><a href="bacheca.html">Bacheca</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+            </nav>
+        </header>
+        
+        <div id="divBody">
+            <div id="sideBar">
+                <div id="tuoiAmici">
+                    <div id="intestazione">
+                        <h2>Persone</h2>
+                    </div>
+                    <div id="corpoIntestazione">
+                        <nav>
+                            <ul>
+                                <li><img class="icona" title="icoAmico" alt="Icona del profilo di Mario" src="img/mariorossi.jpg">Mario Rossi</li>
+                                <li><img class="icona" title="icoAmico" alt="Icona del profilo di Gianluca" src="img/lucabianchi.jpg">Gianluca Verdi</li>
+                                <li><img class="icona" title="icoAmico" alt="Icona del profilo di Yoko" src="img/saraverdi.jpg">Yokopoko Mayoko</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div id="gruppi">
+                    <div id="intestazione">
+                        <h2>Gruppi</h2>
+                    </div>
+                    <div id="corpoIntestazione">
+                        <nav>
+                            <ul>
+                                <li><img class="icona" title="icoGruppo" alt="Icona del Gruppo" src="img/icogruppoPC.png">PCisti anonimi</li>
+                                <li><img class="icona" title="icoGruppo" alt="Icona del Gruppo" src="img/icowhitemage.jpg">White Mage</li>
+                                <li><img class="icona" title="icoGruppo" alt="Icona del Gruppo" src="img/icosmile.png">Roberto Benigni FANCLUB</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div id="datiPersonali">
+                <img class="fotoProfilo" title="fotoProfilo" alt="Foto Profilo" src="img/fotoprofilo.jpg">
+                <div id="inserimentoDati">
+                    <form action="servlet.java" method="get">
+                        <label for="name">Nome </label>
+                        <input type="text" name="name" id="name" value="--"/><br/>
+                        <label for="surname">Cognome </label>
+                        <input type="text" name="surname" id="surname" value="--"/><br/>
+                        <label for="descrizione">Descriviti in breve</label>
+                        <textarea rows="5" cols="30" name="descrizione" id="descrizione">Parlaci un po' di te</textarea><br/>
+                        <label for="dataDiNascita">Data di nascita</label>
+                        <input type="date" name="dataDiNascita" id="dataDiNascita"/><br/>
+                        <label for="pswd">Inserire Password</label>
+                        <input type="password" name="pswd" id="pswd" value="oscurato"/><br/>
+                        <label for="conferma">Conferma Password</label>
+                        <input type="password" name="confermaPswd" id="conferma" value="oscurato"/><br/>
+                        <button type="submit">Conferma</button>
+                    </form>
+                </div>
+            </div>
+        </div>    
+    </body>
+</html>
